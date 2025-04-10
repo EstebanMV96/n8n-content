@@ -32,6 +32,10 @@ services:
       - DB_POSTGRESDB_USER=n8n_user
       - DB_POSTGRESDB_PASSWORD=n8n_user_pass
       - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=false
+      - N8N_HOST=replace_with_your_ngrok_url
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=https
+      - WEBHOOK_URL=https://replace_with_your_ngrok_url
     ports:
       - 5678:5678
     volumes:
